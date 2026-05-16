@@ -12,5 +12,5 @@ fi
 echo "==> Entering dotfiles directory..."
 cd "$DOTFILES"
 
-stow --adopt *
+stow --adopt */
 git restore .
