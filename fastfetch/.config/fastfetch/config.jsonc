@@ -1,0 +1,74 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "type": "kitty-direct",
+    "source": "/home/manoj/.config/fastfetch/logo/arch.png",
+    "width": 20,
+    "padding": {
+      "top": 4,
+      "left": 1,
+      "right": 3,
+    },
+  },
+  "modules": [
+    "break",
+    "break",
+    {
+      "type": "title",
+      "keyWidth": 10,
+    },
+    "break",
+    {
+      "type": "os",
+      "key": "os    ",
+      "keyColor": "yellow",
+      "format": "{name}",
+    },
+    {
+      "type": "kernel",
+      "key": "ker   ",
+      "keyColor": "green",
+    },
+    {
+      "type": "packages",
+      "key": "pkgs  ",
+      "keyColor": "cyan",
+    },
+    {
+      "type": "shell",
+      "key": "sh    ",
+      "keyColor": "blue",
+      "format": "{pretty-name}",
+    },
+    {
+      "type": "uptime",
+      "key": "up    ",
+      "keyColor": "green",
+    },
+    {
+      "type": "cpu",
+      "key": "cpu   ",
+      "keyColor": "red",
+      "format": "{name}",
+    },
+    {
+      "type": "memory",
+      "key": "ram   ",
+      "keyColor": "yellow",
+      "format": "{used} / {total}",
+    },
+    {
+      "type": "disk",
+      "key": "disk  ",
+      "keyColor": "cyan",
+      "folders": ["/"],
+      "format": "{size-used} / {size-total}",
+    },
+    "break",
+    {
+      "type": "colors",
+      "symbol": "circle",
+    },
+    "break",
+  ],
+}

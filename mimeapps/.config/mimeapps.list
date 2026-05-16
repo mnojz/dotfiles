@@ -1,0 +1,11 @@
+[Default Applications]
+x-scheme-handler/ytd=ytd-handler.desktop
+text/html=brave-origin-beta.desktop
+x-scheme-handler/http=brave-origin-beta.desktop
+x-scheme-handler/https=brave-origin-beta.desktop
+x-scheme-handler/about=brave-origin-beta.desktop
+x-scheme-handler/unknown=brave-origin-beta.desktop
+image/png=imv.desktop
+
+[Added Associations]
+image/png=imv.desktop;

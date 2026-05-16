@@ -1,0 +1,10 @@
+[Icons]
+Theme=kora
+
+[KDE]
+ShowDeleteCommand=false
+widgetStyle=qt6ct-style
+
+[PreviewSettings]
+EnableRemoteFolderThumbnail=false
+MaximumRemoteSize=0
