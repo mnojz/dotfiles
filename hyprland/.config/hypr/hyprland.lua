@@ -96,4 +96,4 @@ hl.bind(mainMod .. " + CTRL + F24", hl.dsp.exec_cmd("~/.config/hypr/scripts/cust
 hl.bind("XF86Tools", hl.dsp.exec_cmd("~/.config/hypr/scripts/custom_refresh.sh"))
 
 -- open hyprland config in code editor
-hl.bind(mainMod .. " + I", hl.dsp.exec_cmd("kitty nvim ~/.config/hypr/"))
+hl.bind(mainMod .. " + I", hl.dsp.exec_cmd("cd ~/.config/hypr && kitty nvim hyprland.lua"))
