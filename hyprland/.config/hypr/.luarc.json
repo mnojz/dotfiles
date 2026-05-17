@@ -1,0 +1,8 @@
+{
+  "workspace": {
+    "library": ["/home/manoj/.config/hypr"]
+  },
+  "diagnostics": {
+    "globals": ["hl"]
+  }
+}
