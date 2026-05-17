@@ -18,7 +18,7 @@ hl.config({
 hl.device({
     name          = "elan0307:00-04f3:3282-touchpad",
     accel_profile = "flat",
-    sensitivity   = -0.5,
+    sensitivity   = 0.5,
 })
 
 hl.gesture({ fingers = 3, direction = "horizontal", action = "workspace" })
