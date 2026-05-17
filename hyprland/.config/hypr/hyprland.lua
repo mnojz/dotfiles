@@ -92,8 +92,8 @@ hl.bind("ALT + PERIOD", hl.dsp.exec_cmd("playerctl next"), { locked = true })
 hl.bind("ALT + COMMA", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
 
 -- macro bindings for script
-hl.bind(mainMod .. " + CTRL + F24", hl.dsp.exec_cmd("~/.local/bin/scripts/custom_touchpad.sh"))
-hl.bind("XF86Tools", hl.dsp.exec_cmd("~/.local/bin/scripts/custom_refresh.sh"))
+hl.bind(mainMod .. " + CTRL + F24", hl.dsp.exec_cmd("~/.config/hypr/scripts/custom_touchpad.sh"))
+hl.bind("XF86Tools", hl.dsp.exec_cmd("~/.config/hypr/scripts/custom_refresh.sh"))
 
 -- open hyprland config in code editor
 hl.bind(mainMod .. " + I", hl.dsp.exec_cmd("kitty nvim ~/.config/hypr/"))
