@@ -19,7 +19,7 @@ MenuBar=Disabled
 ToolButtonStyle=IconOnly
 
 [PreviewSettings]
-Plugins=ffmpegthumbnailer,appimagethumbnail,audiothumbnail,glycin-heif,evince,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,FreeCAD,imagethumbnail,glycin-image-rs,jpegthumbnail,glycin-jxl,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,gsf-office,mltpreview,opendocumentthumbnail,glycin-svg,svgthumbnail,gnome-font-viewer
+Plugins=ffmpegthumbnailer,appimagethumbnail,audiothumbnail,glycin-heif,evince,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,imagethumbnail,glycin-image-rs,jpegthumbnail,glycin-jxl,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,glycin-svg,svgthumbnail
 
 [Toolbar mainToolBar]
 ToolButtonStyle=IconOnly
