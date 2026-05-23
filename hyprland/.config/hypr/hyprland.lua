@@ -8,8 +8,6 @@ require("modules.workspaces")
 require("modules.scripts")
 
 
-
-
 ---- MY PROGRAMS ----
 local terminal    = "kitty"
 local fileManager = "dolphin"
