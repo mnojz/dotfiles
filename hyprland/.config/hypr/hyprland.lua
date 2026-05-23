@@ -94,8 +94,6 @@ hl.bind("ALT + PERIOD", hl.dsp.exec_cmd("playerctl next"), { locked = true })
 hl.bind("ALT + COMMA", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
 
 -- macro bindings for script
-local refresh_rate = require("modules.scripts").refresh_rate
-hl.bind("XF86Tools", refresh_rate)
 local touchpad_toggle = require("modules.scripts").touchpad_toggle
 hl.bind(mainMod .. " + CTRL + F24", touchpad_toggle)
 
