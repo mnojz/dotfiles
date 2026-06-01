@@ -10,7 +10,7 @@ hl.config { plugin = { dynamic_cursors = {
 
 
     rotate = {
-        length = 24,
+        length = 20,
         offset = 0.0,
     },
 
