@@ -2,21 +2,21 @@ hl.config { plugin = { dynamic_cursors = {
 
     enabled = true,
 
-    mode = "tilt",
-    -- mode = "rotate",
+    -- mode = "tilt",
+    mode = "rotate",
     -- mode = "stretch",
 
     threshold = 2,
 
 
     rotate = {
-        length = 20,
+        length = 24,
         offset = 0.0,
     },
 
 
     tilt = {
-        limit = 3000,
+        limit = 2000,
 
         -- activation = "linear",
         -- activation = "quadratic",

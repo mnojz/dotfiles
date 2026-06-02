@@ -14,6 +14,10 @@ require("modules.permission")
 local terminal    = "kitty"
 local fileManager = "dolphin"
 
+---- scripts collection ----
+local scripts     = require("modules.scripts")
+
+
 
 ---- KEYBINDINGS ----
 local mainMod = "SUPER"
@@ -93,9 +97,13 @@ hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl play-pause"), { locked = tru
 hl.bind("ALT + PERIOD", hl.dsp.exec_cmd("playerctl next"), { locked = true })
 hl.bind("ALT + COMMA", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
 
+-- windows like binds
+hl.bind("SUPER + M", scripts.minimize)
+
+
+
 -- macro bindings for script
-local touchpad_toggle = require("modules.scripts").touchpad_toggle
-hl.bind(mainMod .. " + CTRL + F24", touchpad_toggle)
+hl.bind(mainMod .. " + CTRL + F24", scripts.touchpad_toggle)
 
 -- open hyprland config in code editor
 hl.bind(mainMod .. " + I", hl.dsp.exec_cmd("cd ~/.config/hypr && kitty nvim hyprland.lua"))
