@@ -32,48 +32,39 @@ function M.minimize()
 end
 
 ---lua.conf.drag_terminal
+local StartX = 0
+local StartY = 0
+local IsDragging = false
 
-local region = {}
-
-local function to_number_pos(pos)
-    if not pos then return nil end
-    local x = tonumber(pos.x)
-    local y = tonumber(pos.y)
-    if not x or not y then return nil end
-    return { x = x, y = y }
-end
-
-local function normalize_region(p1, p2)
-    return {
-        x = math.floor(math.min(p1.x, p2.x)),
-        y = math.floor(math.min(p1.y, p2.y)),
-        w = math.floor(math.max(p1.x, p2.x) - math.min(p1.x, p2.x)),
-        h = math.floor(math.max(p1.y, p2.y) - math.min(p1.y, p2.y)),
-    }
-end
-
-function M.finish()
-    local action = function(r) hl.exec_cmd("kitty", { float = true, move = { r.x, r.y }, size = { r.w, r.h } }) end
-    if type(action) ~= "function" then
-        region.start = nil
+function M.dragStart()
+    local cursor = hl.get_cursor_pos()
+    if not cursor then
         return
     end
 
-    local start = region.start
-    region.start = nil
-    if not start then return end
-    local stop = to_number_pos(hl.get_cursor_pos())
-    if not stop then return end
-    local r = normalize_region(start, stop)
-    if not r and r.w > 0 and r.h > 0 then return end
-    action(r)
+    StartX = cursor.x
+    StartY = cursor.y
+    IsDragging = true
 end
 
-function M.drag_terminal()
-    local key = "SUPER + ALT + mouse:272"
-    hl.bind(key, function() region.start = to_number_pos(hl.get_cursor_pos()) end, { mouse = true })
-    hl.bind(key, function() region.start = nil end, { mouse = true, click = true })
-    hl.bind(key, function() M.finish() end, { mouse = true, drag = true })
+function M.dragEnd()
+    if not IsDragging then
+        return
+    end
+    IsDragging = false
+
+    local cursor = hl.get_cursor_pos()
+    if not cursor then
+        return
+    end
+
+    local monitor = hl.get_monitor_at_cursor().position
+    local x = math.min(StartX, cursor.x) - monitor.x
+    local y = math.min(StartY, cursor.y) - monitor.y
+    local w = math.abs(StartX - cursor.x)
+    local h = math.abs(StartY - cursor.y)
+
+    hl.dispatch(hl.dsp.exec_cmd("kitty", { float = true, move = { x, y }, size = { w, h } }))
 end
 
 return M

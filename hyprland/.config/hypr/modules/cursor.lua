@@ -23,7 +23,7 @@ hl.config { plugin = { dynamic_cursors = {
         activation = "negative_quadratic",
 
         window = 100,
-        full = 90,
+        full = 70,
     },
 
 
