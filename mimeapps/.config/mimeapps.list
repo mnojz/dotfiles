@@ -12,3 +12,4 @@ x-scheme-handler/https=brave-origin-beta.desktop
 x-scheme-handler/unknown=brave-origin-beta.desktop
 x-scheme-handler/ytd=ytd-handler.desktop
 x-scheme-handler/discord=vesktop.desktop
+x-scheme-handler/stremio=stremio-enhanced.desktop

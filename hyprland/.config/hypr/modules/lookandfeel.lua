@@ -7,7 +7,7 @@ hl.config({
         border_size      = 1,
 
         col              = {
-            active_border   = "rgba(95BCFB30)",
+            active_border   = "rgba(95BCFB55)",
             inactive_border = "rgba(FFFFFF00)",
         },
 
@@ -32,7 +32,7 @@ hl.config({
             enabled  = true,
             size     = 3,
             passes   = 3,
-            vibrancy = 0.16,
+            vibrancy = 0.12,
         },
     },
 
