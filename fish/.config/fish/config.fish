@@ -1,6 +1,6 @@
 # this will disable greeting message
 function fish_greeting
-fastfetch
+fetch
 end
 
 starship init fish | source

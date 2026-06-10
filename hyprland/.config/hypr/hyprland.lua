@@ -6,7 +6,6 @@ require("modules.monitors")
 require("modules.variables")
 require("modules.workspaces")
 require("modules.scripts")
-require("modules.cursor")
 require("modules.permission")
 
 
