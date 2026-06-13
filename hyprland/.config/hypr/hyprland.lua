@@ -96,6 +96,11 @@ hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl play-pause"), { locked = tru
 hl.bind("ALT + PERIOD", hl.dsp.exec_cmd("playerctl next"), { locked = true })
 hl.bind("ALT + COMMA", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
 
+-- controls for ear-buds
+hl.bind("XF86AudioNext", hl.dsp.exec_cmd("playerctl next"), { locked = true })
+hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
+
+
 -- custom made function.
 hl.bind(mainMod .. " + M", scripts.minimize)
 hl.bind(mainMod .. " + CTRL + F24", scripts.touchpad_toggle)
