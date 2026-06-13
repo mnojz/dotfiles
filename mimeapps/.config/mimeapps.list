@@ -5,11 +5,12 @@ image/png=imv.desktop;
 [Default Applications]
 application/pdf=evince.desktop;
 image/png=imv.desktop
-text/html=brave-origin-beta.desktop
-x-scheme-handler/about=brave-origin-beta.desktop
-x-scheme-handler/http=brave-origin-beta.desktop
-x-scheme-handler/https=brave-origin-beta.desktop
-x-scheme-handler/unknown=brave-origin-beta.desktop
+text/html=brave-origin.desktop
+x-scheme-handler/about=brave-origin.desktop
+x-scheme-handler/http=brave-origin.desktop
+x-scheme-handler/https=brave-origin.desktop
+x-scheme-handler/unknown=brave-origin.desktop
 x-scheme-handler/ytd=ytd-handler.desktop
 x-scheme-handler/discord=vesktop.desktop
 x-scheme-handler/stremio=stremio-enhanced.desktop
+x-scheme-handler/accela=accela.desktop
