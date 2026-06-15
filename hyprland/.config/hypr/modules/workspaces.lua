@@ -90,3 +90,12 @@ hl.window_rule({
     center = true,
     float  = true,
 })
+
+-- make satty floating
+hl.window_rule({
+    name   = "satty",
+    match  = { class = "com.gabm.satty" },
+    center = true,
+    float  = true,
+    size   = "700 600",
+})
