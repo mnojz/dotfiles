@@ -107,6 +107,7 @@ hl.bind(mainMod .. " + CTRL + F24", scripts.touchpad_toggle)
 hl.bind(mainMod .. " + ALT + mouse:272", scripts.dragStart, { mouse = true })
 hl.bind(mainMod .. " + ALT + mouse:272", scripts.dragEnd, { mouse = true, release = true })
 
+hl.bind("XF86Tools", scripts.toggle_refresh_rate)
 
 
 -- open hyprland config in code editor
