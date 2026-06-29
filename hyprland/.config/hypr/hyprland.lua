@@ -44,6 +44,10 @@ hl.bind(mainMod .. " + A", hl.dsp.exec_cmd("ambxst run assistant"))
 hl.bind(mainMod .. " + S", hl.dsp.exec_cmd("ambxst run tools"))
 
 hl.bind("ALT + SPACE", hl.dsp.exec_cmd("ambxst run launcher"))
+hl.bind("ALT + TAB", hl.dsp.exec_cmd("ambxst run overview"))
+hl.bind("ALT + N", hl.dsp.exec_cmd("ambxst run notes"))
+hl.bind("ALT + X", hl.dsp.exec_cmd(terminal))
+
 
 ---- move focus with mainmod + arrow keys ----
 hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
