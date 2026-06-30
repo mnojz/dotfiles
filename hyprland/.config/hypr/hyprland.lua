@@ -7,6 +7,8 @@ require("modules.variables")
 require("modules.workspaces")
 require("modules.scripts")
 require("modules.permission")
+require("modules.plugin")
+require("modules.scrolloverview")
 
 
 ---- MY PROGRAMS ----

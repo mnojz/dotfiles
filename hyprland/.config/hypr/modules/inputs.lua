@@ -23,15 +23,15 @@ hl.device({
 
 -- gestures
 
-local function ctrlTab()
-    hl.exec_cmd("wtype -M ctrl -k tab -m ctrl")
-end
+-- local function ctrlTab()
+--     hl.exec_cmd("wtype -M ctrl -k tab -m ctrl")
+-- end
 
-local function ctrlShiftTab()
-    hl.exec_cmd("wtype -M ctrl -M shift -k tab -m shift -m ctrl")
-end
+-- local function ctrlShiftTab()
+--     hl.exec_cmd("wtype -M ctrl -M shift -k tab -m shift -m ctrl")
+-- end
 
 hl.gesture({ fingers = 3, direction = "horizontal", action = "workspace" })
 
-hl.gesture({ fingers = 3, direction = "down", action = ctrlTab })
-hl.gesture({ fingers = 3, direction = "up", action = ctrlShiftTab })
+-- hl.gesture({ fingers = 3, direction = "down", action = ctrlTab })
+-- hl.gesture({ fingers = 3, direction = "up", action = ctrlShiftTab })

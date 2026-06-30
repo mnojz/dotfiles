@@ -1,11 +1,11 @@
 [Added Associations]
-application/pdf=evince.desktop;
+application/pdf=brave-origin.desktop;evince.desktop;
 image/png=imv.desktop;
 video/mp4=mpv.desktop;
 video/x-matroska=mpv.desktop;
 
 [Default Applications]
-application/pdf=evince.desktop;
+application/pdf=brave-origin.desktop;
 image/png=imv.desktop
 inode/directory=org.gnome.Nautilus.desktop
 text/html=brave-origin.desktop

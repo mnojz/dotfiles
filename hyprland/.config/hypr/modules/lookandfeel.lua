@@ -13,7 +13,7 @@ hl.config({
 
         resize_on_border = true,
         allow_tearing    = false,
-        layout           = "dwindle",
+        layout           = "scrolling",
     },
 
     decoration = {
@@ -30,8 +30,8 @@ hl.config({
 
         blur             = {
             enabled  = true,
-            size     = 3,
-            passes   = 3,
+            size     = 2,
+            passes   = 2,
             vibrancy = 0.12,
         },
     },
@@ -70,8 +70,10 @@ hl.animation({ leaf = "zoomFactor", enabled = true, speed = 7, bezier = "quick" 
 hl.config({
     dwindle = {
         preserve_split = true, -- You probably want this
-    },
+    }
 })
+
+
 
 hl.config({
     misc = {
