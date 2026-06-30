@@ -13,7 +13,7 @@ hl.config({
 
         resize_on_border = true,
         allow_tearing    = false,
-        layout           = "scrolling",
+        layout           = "dwindle",
     },
 
     decoration = {
@@ -72,8 +72,6 @@ hl.config({
         preserve_split = true, -- You probably want this
     }
 })
-
-
 
 hl.config({
     misc = {
