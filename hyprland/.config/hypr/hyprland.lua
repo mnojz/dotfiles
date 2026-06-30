@@ -119,4 +119,4 @@ hl.bind("XF86Tools", scripts.toggle_refresh_rate)
 hl.bind(mainMod .. " + I", hl.dsp.exec_cmd("cd ~/.config/hypr && kitty nvim hyprland.lua"))
 
 -- open system monitor
-hl.bind("CTRL + SHIFT + ESCAPE", hl.dsp.exec_cmd("gnome-system-monitor"))
+hl.bind(mainMod .. " + P", hl.dsp.exec_cmd("gnome-system-monitor"))
