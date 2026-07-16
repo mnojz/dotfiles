@@ -1,13 +1,15 @@
 [Added Associations]
 application/pdf=evince-2.desktop;brave-origin.desktop;evince.desktop;
 image/png=imv.desktop;
+text/css=code.desktop;
 video/mp4=mpv.desktop;
 video/x-matroska=mpv.desktop;
 
 [Default Applications]
 application/pdf=evince-2.desktop;
 image/png=imv.desktop
-inode/directory=org.gnome.Nautilus.desktop
+inode/directory=org.kde.dolphin.desktop
+text/css=code.desktop;
 text/html=brave-origin.desktop
 video/mp4=mpv.desktop;
 video/x-matroska=mpv.desktop;

@@ -2,6 +2,7 @@ MenuBar=Disabled
 
 [General]
 RememberOpenedTabs=false
+ShowSelectionToggle=false
 Version=202
 ViewPropsTimestamp=2026,5,12,22,58,55.839
 

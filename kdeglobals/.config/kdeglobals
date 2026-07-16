@@ -23,4 +23,4 @@ View Style=DetailTree
 
 [PreviewSettings]
 EnableRemoteFolderThumbnail=false
-MaximumRemoteSize=104857600
+MaximumRemoteSize=52428800
