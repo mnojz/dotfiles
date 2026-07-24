@@ -1,6 +1,7 @@
 ; org.xfce.mousepad GtkAccelMap rc-file         -*- scheme -*-
 ; this file is an automated accelerator map dump
 ;
+; (gtk_accel_path "<Actions>/app.mousepad-plugin-shortcuts" "")
 ; (gtk_accel_path "<Actions>/win.edit.convert.spaces-to-tabs" "")
 ; (gtk_accel_path "<Actions>/app.preferences.view.smart-backspace" "")
 ; (gtk_accel_path "<Actions>/app.preferences.view.highlight-current-line" "")
