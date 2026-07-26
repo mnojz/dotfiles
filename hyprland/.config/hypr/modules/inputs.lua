@@ -31,7 +31,10 @@ local function ctrlShiftTab()
     hl.exec_cmd("wtype -M ctrl -M shift -k tab -m shift -m ctrl")
 end
 
-hl.gesture({ fingers = 3, direction = "horizontal", action = "workspace" })
-
+-- browser gestures
 hl.gesture({ fingers = 3, direction = "down", action = ctrlTab })
 hl.gesture({ fingers = 3, direction = "up", action = ctrlShiftTab })
+
+-- workspace gestures
+hl.gesture({ fingers = 3, direction = "horizontal", action = "workspace" })
+
