@@ -1,5 +1,3 @@
----- MONITORS ----
-
 local refresh = "60.32"
 
 local f = io.open("/sys/class/power_supply/ADP1/online", "r")
@@ -9,10 +7,6 @@ if f then
 
     if online == "1" then
         refresh = "144.42"
-        os.execute('notify-send "Power" "Switched to 144 Hz"')
-    else
-        refresh = "60.32"
-        os.execute('notify-send "Power" "Switched to 60 Hz"')
     end
 end
 
