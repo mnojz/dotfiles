@@ -1,18 +1,6 @@
-local refresh = "60.32"
-
-local f = io.open("/sys/class/power_supply/ADP1/online", "r")
-if f then
-    local online = f:read("*l")
-    f:close()
-
-    if online == "1" then
-        refresh = "144.42"
-    end
-end
-
 hl.monitor({
     output   = "eDP-1",
-    mode     = "1920x1080@" .. refresh,
+    mode     = "preferred",
     position = "auto",
     scale    = "1",
 })
