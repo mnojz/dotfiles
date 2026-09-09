@@ -1,5 +1,6 @@
 [Added Associations]
 application/pdf=evince.desktop;evince-2.desktop;brave-origin.desktop;
+audio/mp4=org.gnome.Decibels.desktop;
 image/jpeg=imv-2.desktop;
 image/png=imv.desktop;
 text/css=code.desktop;
@@ -9,6 +10,7 @@ video/x-matroska=mpv.desktop;
 
 [Default Applications]
 application/pdf=evince.desktop;
+audio/mp4=org.gnome.Decibels.desktop;
 image/jpeg=imv-2.desktop;
 image/png=imv.desktop
 inode/directory=org.kde.dolphin.desktop
@@ -19,10 +21,11 @@ video/webm=mpv.desktop;
 video/x-matroska=mpv.desktop;
 x-scheme-handler/about=brave-origin.desktop
 x-scheme-handler/accela=accela.desktop
+x-scheme-handler/antigravity=antigravity.desktop
 x-scheme-handler/discord=vesktop.desktop
+x-scheme-handler/harbor=harbor-handler.desktop
 x-scheme-handler/http=brave-origin.desktop
 x-scheme-handler/https=brave-origin.desktop
-x-scheme-handler/stremio=stremio-enhanced.desktop
+x-scheme-handler/stremio=harbor-handler.desktop
 x-scheme-handler/unknown=brave-origin.desktop
 x-scheme-handler/ytd=ytd-handler.desktop
-x-scheme-handler/antigravity=antigravity.desktop

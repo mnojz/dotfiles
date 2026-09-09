@@ -74,6 +74,8 @@ alias open='xdg-open'
 alias fetch='fastfetch --logo "$(find ~/.config/fastfetch/logo -type f | shuf -n 1)"'
 alias matrix='unimatrix'
 
+alias dmm='sudo airmon-ng stop wlo1mon'
+
 if [[ -o interactive ]]; then
     fetch
 fi
@@ -101,3 +103,20 @@ palette() {
     echo " ${c1}██ ${c2}██ ${c3}██ ${c4}██ ${c5}██${r}"
     echo ""
 }
+
+# Function to get the previous command and prepend 'sudo'
+sudo-last-command() {
+    # Fetch the last command from history if the buffer is empty
+    if [[ -z $BUFFER ]]; then
+        zle up-history
+    fi
+    # Prepend sudo if it's not already there
+    if [[ $BUFFER != sudo\ * ]]; then
+        BUFFER="sudo $BUFFER"
+        CURSOR=$#BUFFER
+    fi
+}
+zle -N sudo-last-command
+
+# Bind Alt+S to the function (\es represents Alt+S)
+bindkey '\es' sudo-last-command

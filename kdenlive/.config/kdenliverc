@@ -2,8 +2,12 @@
 1920x1080 screen: Window-Maximized=true
 
 [Recent Dirs]
-KdenliveClipFolder[$e]=$HOME/Music/,$HOME/Videos/Recordings/,$HOME/Downloads/
-KdenliveProjectsFolder[$e]=$HOME/Videos,$HOME/Documents
+KdenliveClipFolder[$e]=$HOME/Videos/,$HOME/Music/,$HOME/Videos/Recordings/
+KdenliveProjectsFolder[$e]=$HOME/Downloads,$HOME/Videos,$HOME/Documents
+
+[Recent Files]
+File1[$e]=$HOME/Downloads/sug.kdenlive
+Name1[$e]=sug.kdenlive
 
 [Recent Profiles]
 recentProfileNames=HD 1080p 60 fps,HD 1080p 30 fps,HD 1080p 25 fps,HD 720p 25 fps,720x1280 30.00fps
@@ -15,6 +19,26 @@ recentProfiles=atsc_1080p_60,atsc_1080p_30,atsc_1080p_25,atsc_720p_25,/home/mano
 [RenderWidget]
 addtobin=false
 showoptions=false
+
+[TitleWidget]
+background_alpha=0
+background_color=0,0,0
+dialog_geometry=AdnQywADAAAAAAAAAAAAAAAABBMAAANTAAAAAAAAAAAAAAQTAAADUwAAAAACAAAAB4AAAAAAAAAAAAAABBMAAANT
+font_color=0,0,0
+font_family=Sans Serif,-1,42,5,400,0,0,0,0,0,0,1,0,0,0,1,,0,0
+font_italic=false
+font_outline=0
+font_outline_color=0,0,0
+font_pixel_size=42
+font_underlined=false
+font_weight=400
+rect_background_alpha=255
+rect_background_color=0,0,0
+rect_foreground_alpha=255
+rect_foreground_color=0,0,0
+rect_line_width=0
+splitter=629,394
+use_grid=false
 
 [UiSettings]
 ColorSchemePath=
@@ -97,4 +121,4 @@ thumbColor1=0,234,168
 thumbColor2=0,240,160
 
 [version]
-version=26.04.2
+version=26.08.0

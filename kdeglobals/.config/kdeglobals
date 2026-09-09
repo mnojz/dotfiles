@@ -18,7 +18,7 @@ Sort by=Name
 Sort directories first=true
 Sort hidden files last=false
 Sort reversed=false
-Speedbar Width=100
+Speedbar Width=158
 View Style=DetailTree
 
 [PreviewSettings]
