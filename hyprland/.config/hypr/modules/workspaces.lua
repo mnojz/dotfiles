@@ -39,10 +39,10 @@ hl.window_rule({
 
 -- make audio player floating
 hl.window_rule({
-    name   = "audio player",
-    match  = { class = "org.gnome.Decibels" },
+    name   = "Amberol",
+    match  = { class = "io.bassi.Amberol" },
     center = true,
-    size   = "480 260",
+    size   = "360 660",
     float  = true,
 })
 

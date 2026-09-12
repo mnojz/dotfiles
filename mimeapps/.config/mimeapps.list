@@ -1,8 +1,8 @@
 [Added Associations]
 application/pdf=evince.desktop;evince-2.desktop;brave-origin.desktop;
-audio/mp4=org.gnome.Decibels.desktop;
+audio/mp4=io.bassi.Amberol.desktop;org.gnome.Decibels.desktop;
 image/jpeg=imv-2.desktop;
-image/png=imv.desktop;
+image/png=eog.desktop;imv.desktop;
 text/css=code.desktop;
 video/mp4=mpv.desktop;
 video/webm=mpv.desktop;
@@ -10,9 +10,9 @@ video/x-matroska=mpv.desktop;
 
 [Default Applications]
 application/pdf=evince.desktop;
-audio/mp4=org.gnome.Decibels.desktop;
+audio/mp4=io.bassi.Amberol.desktop;
 image/jpeg=imv-2.desktop;
-image/png=imv.desktop
+image/png=eog.desktop;
 inode/directory=org.kde.dolphin.desktop
 text/css=code.desktop;
 text/html=brave-origin.desktop
