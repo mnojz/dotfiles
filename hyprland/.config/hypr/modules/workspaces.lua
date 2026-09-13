@@ -99,3 +99,44 @@ hl.window_rule({
     float  = true,
     size   = "700 600",
 })
+
+---- layer rules
+
+hl.layer_rule({
+    no_anim = true,
+    match = { namespace = "quickshell" },
+})
+
+hl.layer_rule({
+    blur = true,
+    match = { namespace = "quickshell" },
+})
+
+hl.layer_rule({
+    blur_popups = true,
+    match = { namespace = "quickshell" },
+})
+
+hl.layer_rule({
+    ignore_alpha = 1.00,
+    match = { namespace = "quickshell" },
+})
+
+hl.layer_rule({
+    no_anim = true,
+    match = { namespace = "selection" },
+})
+
+hl.layer_rule({
+    blur = true,
+    ignore_alpha = 0.40,
+    match = { namespace = "fabric" },
+})
+
+hl.layer_rule({
+    no_anim = true,
+    blur = true,
+    blur_popups = true,
+    ignore_alpha = 0.20,
+    match = { namespace = "^ambxst(:.*)?$" },
+})

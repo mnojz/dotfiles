@@ -30,7 +30,8 @@ hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("ambxst run lockscreen"))
 hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("ambxst run clipboard"))
 hl.bind(mainMod .. " + A", hl.dsp.exec_cmd("ambxst run assistant"))
 hl.bind(mainMod .. " + S", hl.dsp.exec_cmd("ambxst run tools"))
-
+hl.bind(mainMod .. " + I", hl.dsp.exec_cmd("ambxst run config"))
+--------
 hl.bind("ALT + SPACE", hl.dsp.exec_cmd("ambxst run launcher"))
 hl.bind("ALT + TAB", hl.dsp.exec_cmd("ambxst run overview"))
 hl.bind("ALT + N", hl.dsp.exec_cmd("ambxst run notes"))
@@ -87,8 +88,6 @@ hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"), { locked = tr
 hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("ALT + PERIOD", hl.dsp.exec_cmd("playerctl next"), { locked = true })
 hl.bind("ALT + COMMA", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
-
--- controls for ear-buds
 hl.bind("XF86AudioNext", hl.dsp.exec_cmd("playerctl next"), { locked = true })
 hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
 
