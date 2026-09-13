@@ -31,6 +31,7 @@ hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("ambxst run clipboard"))
 hl.bind(mainMod .. " + A", hl.dsp.exec_cmd("ambxst run assistant"))
 hl.bind(mainMod .. " + S", hl.dsp.exec_cmd("ambxst run tools"))
 hl.bind(mainMod .. " + I", hl.dsp.exec_cmd("ambxst run config"))
+hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("hyprctl reload"))
 --------
 hl.bind("ALT + SPACE", hl.dsp.exec_cmd("ambxst run launcher"))
 hl.bind("ALT + TAB", hl.dsp.exec_cmd("ambxst run overview"))
