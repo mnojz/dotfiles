@@ -120,3 +120,5 @@ zle -N sudo-last-command
 
 # Bind Alt+S to the function (\es represents Alt+S)
 bindkey '\es' sudo-last-command
+
+. "$HOME/.cargo/env"

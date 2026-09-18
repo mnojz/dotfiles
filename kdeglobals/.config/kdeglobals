@@ -1,3 +1,6 @@
+[General]
+TerminalApplication=kitty
+
 [Icons]
 Theme=Colloid-Dark
 

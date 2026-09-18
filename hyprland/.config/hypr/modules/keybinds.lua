@@ -10,7 +10,7 @@ local scripts     = require("modules.scripts")
 local mainMod = "SUPER"
 
 hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd(terminal))
-hl.bind(mainMod .. " + SPACE", hl.dsp.layout("togglesplit")) -- dwindle only
+hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd("ambxst run pkg-launcher"))
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + F", hl.dsp.window.float({ action = "toggle" }))
