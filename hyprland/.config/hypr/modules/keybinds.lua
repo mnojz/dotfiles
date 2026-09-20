@@ -25,6 +25,7 @@ hl.bind(mainMod .. " + SHIFT + A", hl.dsp.exec_cmd("ambxst run lens"))
 hl.bind(mainMod .. " + Super_L", hl.dsp.exec_cmd("ambxst run dashboard"))
 hl.bind(mainMod .. " + ESCAPE", hl.dsp.exec_cmd("ambxst run powermenu"))
 hl.bind(mainMod .. " + PERIOD", hl.dsp.exec_cmd("ambxst run emoji"))
+hl.bind(mainMod .. " + SLASH", hl.dsp.exec_cmd("ambxst run wallpaper-random"))
 hl.bind(mainMod .. " + COMMA", hl.dsp.exec_cmd("ambxst run wallpapers"))
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("ambxst run lockscreen"))
 hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("ambxst run clipboard"))
@@ -37,7 +38,6 @@ hl.bind("ALT + SPACE", hl.dsp.exec_cmd("ambxst run launcher"))
 hl.bind("ALT + TAB", hl.dsp.exec_cmd("ambxst run overview"))
 hl.bind("ALT + N", hl.dsp.exec_cmd("ambxst run notes"))
 hl.bind("ALT + X", hl.dsp.exec_cmd(terminal))
-
 
 ---- move focus with mainmod + arrow keys ----
 hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
