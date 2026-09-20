@@ -22,5 +22,9 @@ ToolButtonStyle=IconOnly
 [PreviewSettings]
 Plugins=ffmpegthumbnailer,appimagethumbnail,audiothumbnail,glycin-heif,evince,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,imagethumbnail,glycin-image-rs,jpegthumbnail,glycin-jxl,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,glycin-svg,svgthumbnail
 
+[Search]
+Location=Everywhere
+SearchTool=Baloo
+
 [Toolbar mainToolBar]
 ToolButtonStyle=IconOnly
