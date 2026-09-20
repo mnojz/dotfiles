@@ -94,7 +94,6 @@ hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true 
 
 
 -- custom made function.
-hl.bind(mainMod .. " + M", scripts.minimize)
 hl.bind(mainMod .. " + CTRL + F24", scripts.touchpad_toggle)
 hl.bind(mainMod .. " + ALT + mouse:272", scripts.dragStart, { mouse = true })
 hl.bind(mainMod .. " + ALT + mouse:272", scripts.dragEnd, { mouse = true, release = true })

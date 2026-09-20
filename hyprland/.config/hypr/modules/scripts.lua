@@ -1,14 +1,14 @@
 local M = {}
 
--- refreshrate variables
-local is_144 = false
+--              █▀ █▀▀ █▀█ █ █▀█ ▀█▀ █▀             --
+--              ▄█ █▄▄ █▀▄ █ █▀▀ ░█░ ▄█             --
+
+-------------------------------------------------------------------------------------------------------------
+---                                 enable or disable touchpad                                            ---
+-------------------------------------------------------------------------------------------------------------
 -- touchpad variables
 local touchpad_enabled = true
 local TOUCHPAD_NAME = "elan0307:00-04f3:3282-touchpad"
--- drag perminal variables
-local StartX = 0
-local StartY = 0
-local IsDragging = false
 
 -- enable/disable touchpad
 function M.touchpad_toggle()
@@ -25,19 +25,13 @@ function M.touchpad_toggle()
     local status_text = touchpad_enabled and "enabled" or "disabled"
     hl.exec_cmd("notify-send 'Touchpad' '" .. status_text .. "'")
 end
-
--- Minimize window to special workspace
-function M.minimize()
-    hl.dispatch(
-        hl.dsp.window.move({ workspace = "special:magic" })
-    )
-    hl.dispatch(
-        hl.dsp.workspace.toggle_special("magic")
-    )
-
-    hl.exec_cmd("notify-send 'Minimized' 'moved to special workspace'")
-end
-
+-------------------------------------------------------------------------------------------------------------
+---                                    spawn terminal under selection                                     ---
+-------------------------------------------------------------------------------------------------------------
+-- drag terminal variables
+local StartX = 0
+local StartY = 0
+local IsDragging = false
 ---lua.conf.drag_terminal
 function M.dragStart()
     local cursor = hl.get_cursor_pos()
@@ -69,7 +63,11 @@ function M.dragEnd()
 
     hl.dispatch(hl.dsp.exec_cmd("kitty", { float = true, move = { x, y }, size = { w, h } }))
 end
-
+-------------------------------------------------------------------------------------------------------------
+---                                    toggle refresh rate                                                ---
+-------------------------------------------------------------------------------------------------------------
+-- refreshrate variables
+local is_144 = false
 -- dynamic power profiles with dynamic refreshrate
 function M.toggle_refresh_rate()
     is_144 = not is_144
@@ -83,5 +81,6 @@ function M.toggle_refresh_rate()
     local current_rate = is_144 and "144Hz" or "60Hz"
     hl.exec_cmd("notify-send 'Refresh Rate' '" .. current_rate .. "'")
 end
-
+-------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
 return M
