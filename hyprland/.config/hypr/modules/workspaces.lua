@@ -100,6 +100,15 @@ hl.window_rule({
     size   = "700 600",
 })
 
+-- make shelly floating
+hl.window_rule({
+    name   = "shelly",
+    match  = { class = "com.shellyorg.shelly" },
+    center = true,
+    float  = true,
+    size   = "1060 710",
+})
+
 ---- layer rules
 
 hl.layer_rule({
