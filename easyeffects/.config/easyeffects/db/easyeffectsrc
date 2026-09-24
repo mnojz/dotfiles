@@ -1,16 +1,13 @@
-[Presets]
-lastLoadedOutputPreset=Bass Boosted
-
 [Spectrum]
 spectrumShape=area
 
 [StreamInputs]
-inputDevice=alsa_input.pci-0000_00_1f.3-platform-skl_hda_dsp_generic.HiFi__Mic2__source
+inputDevice=bluez_input.2C:BE:EE:93:10:C8
 visiblePage=pluginsPage
 
 [StreamOutputs]
 mostUsedPresets=Bass Boosted
-outputDevice=alsa_output.pci-0000_00_1f.3-platform-skl_hda_dsp_generic.HiFi__Headphones__sink
+outputDevice=bluez_output.2C_BE_EE_93_10_C8.1
 plugins=equalizer#0,convolver#0,bass_enhancer#0,crossfeed#0,maximizer#0
 pluginsListWidth=288
 usedPresets=Bass Boosted:1
